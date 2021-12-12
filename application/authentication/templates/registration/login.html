@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container" style="margin-top: 10rem;">
+
+  <div class="row">
+
+    <div class="col-sm col-md-3 col-lg-3"></div>
+    <div class="col-sm col-md-6 col-lg-6">
+        <div class="card p-5 shadow">
+          <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/240842017_121348826909951_6633808708392544114_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=88lE-M7L6gEAX-kKEZJ&tn=dmTUJ0g77fgk_RIy&_nc_ht=scontent.fmnl17-1.fna&oh=b70d8338384f2f6bd5b60ec8692e92c6&oe=61B35155"
+           class="rounded mx-auto d-block" alt="Chabear Milktea Shop" width="100" height="100">
+          <div class="card-body">
+            <form class="uk-align-center" method="post">
+              {% csrf_token %}
+              <div class="uk-margin">
+                <div class="uk-inline">
+                  <span class="uk-form-icon" uk-icon="icon: user"></span>
+                  <input class="uk-input" type="text" style="width: 600px;">
+                </div>
+              </div>
+
+              <div class="uk-margin">
+                <div class="uk-inline">
+                  <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                  <input class="uk-input" type="password" style="width: 600px;">
+                </div>
+              </div>
+              <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Log In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm col-md-3 col-lg-3"></div>
+
+  </div>
+
+</div>
+{% endblock %}
